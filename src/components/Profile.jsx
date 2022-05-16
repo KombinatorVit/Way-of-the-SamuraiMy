@@ -1,28 +1,28 @@
 import React from 'react';
-
+import s from './Profile.module.css';
 
 const Profile = () => {
-    return  <div className='content'> 
+    return <div className={s.content}>
     <div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJey2FR2kEDYmQSQZFMwo0ia0s34xMvFxZA&usqp=CAU" alt="" />
-
-</div>
-
-<div>https://static.wikia.nocookie.net/fallout/images/f/fc/FO4HRTP_Cat.png/revision/latest?cb=20200829105031&path-prefix=ru  ava + descr </div>
-
-<div>
-My post
-<div>New Post</div>
-</div>
-
-<div>Post
-<div>post 1</div>
-<div>post 2</div>
-
-</div>
-
-
+      <img src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350' />
+    </div>
+    <div>
+      ava + description
+    </div>
+    <div>
+      My posts
+      <div>
+        New post
+      </div>
+      <div className={s.posts}>
+        <div className={s.item}>
+          post 1
+        </div>
+        <div className='item'>
+          post 2
+        </div>
+      </div>
+    </div>
   </div>
 }
-
 export default Profile;
